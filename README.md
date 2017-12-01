@@ -46,11 +46,14 @@ compile 'axeldjaha.library:dialog:1.0'
          * On construit la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
          * on définit le titre et/ou le message à afficher,
          * on définit éventuellement le texte des différents boutons à afficher
-         * on définit éventuellement un écouteur d'évènement pour les différents boutons
+         * on définit éventuellement un écouteur d'évènement pour les défférents boutons
          * et on affiche la boîte de dialogue ainsi créée.
+         *
+         * Ici, le titre est utilisé comme le contenu du message à afficher.
+         * Vous êtes libre de construire la boîte de dialogue comme vous le voulez!
          */
         ADDialog.buildDialog(getSupportFragmentManager())
-                .setTitle("Convertir en pdf ?")
+                .setTitle("Supprimer ?")
                 .setPositiveButtonText("Oui")
                 .setNegativeButtonText("Non")
                 .setListener(new ADDialogListenerAdapter(){
