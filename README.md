@@ -71,3 +71,21 @@ compile 'axeldjaha.library:dialog:1.0'
                 })
                 .show();
 
+# Usage: exemple 3
+
+        /**
+         * On construit la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
+         * on définit le titre et/ou le message à afficher,
+         * on définit éventuellement le texte des différents boutons à afficher
+         * on définit éventuellement un écouteur d'évènement pour les défférents boutons
+         * et on affiche la boîte de dialogue ainsi créée.
+         *
+         * Ici, on n'a pas défini un écouteur d'évènement
+         * Vous êtes libre de construire la boîte de dialogue selon votre logique!
+         */
+        ADDialog.buildDialog(getSupportFragmentManager())
+                .setTitle("Succès")
+                .setMessage("Message envoyé avec succès")
+                .setPositiveButtonText("Ok")
+                .show();
+
