@@ -7,13 +7,11 @@ compile 'axeldjaha.library:dialog:1.0'
 # Usage: exemple 1
 
         /**
-         * On construit la boîte de dialogue,
+         * On construit la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
          * on définit le titre et/ou le message à afficher,
          * on définit éventuellement le texte des différents boutons à afficher
          * on définit éventuellement un écouteur d'évènement pour les différents boutons
          * et on affiche la boîte de dialogue ainsi créée.
-         *
-         * ici, getSupportFragmentManager() est appelé sur une activité (AppCompactActivity)
          */
         ADDialog.buildDialog(getSupportFragmentManager())
                 .setTitle("Que faire ?")
@@ -38,6 +36,34 @@ compile 'axeldjaha.library:dialog:1.0'
                     public void onADNeutralActionPerformed(String action) {
                         super.onADNeutralActionPerformed(action);
                         //l'utilisateur a cliqué sur Annuler, faire qqch ici
+                    }
+                })
+                .show();
+
+# Usage: exemple 2
+
+        /**
+         * On construit la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
+         * on définit le titre et/ou le message à afficher,
+         * on définit éventuellement le texte des différents boutons à afficher
+         * on définit éventuellement un écouteur d'évènement pour les différents boutons
+         * et on affiche la boîte de dialogue ainsi créée.
+         */
+        ADDialog.buildDialog(getSupportFragmentManager())
+                .setTitle("Convertir en pdf ?")
+                .setPositiveButtonText("Oui")
+                .setNegativeButtonText("Non")
+                .setListener(new ADDialogListenerAdapter(){
+                    @Override
+                    public void onADPositiveActionPerformed(String action) {
+                        super.onADPositiveActionPerformed(action);
+                        //l'utilisateur a cliqué sur Oui, faire qqch ici
+                    }
+
+                    @Override
+                    public void onADNegativeActionPerformed(String action) {
+                        super.onADNegativeActionPerformed(action);
+                        //l'utilisateur a cliqué sur Non, faire qqch ici
                     }
                 })
                 .show();
