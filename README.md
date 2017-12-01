@@ -5,7 +5,7 @@ Librairie pour interagir avec l'utilisateur dans une boîte de dialogue.
 # Gradle
 compile 'axeldjaha.library:dialog:1.0'
 # Usage: exemple 1
-![]({{site.baseurl}}/http://photos.plantes-et-jardins.com/v5/section/subsection_300/32-grands-arbres-pour-situation-isolee.jpg)
+
         /**
          * On construit la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
          * on définit le titre et/ou le message à afficher,
