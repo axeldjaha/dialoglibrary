@@ -3,7 +3,7 @@ Les Classes et interfaces de toute librairie 'axeldjaha' commencent toujours par
 # dialoglibrary
 Librairie pour interagir avec l'utilisateur dans une boîte de dialogue.
 # Gradle
-compile 'axeldjaha.library:dialog:1.0'
+compile 'axeldjaha.library:dialog:1.1'
 # Exemple 1
 ![alt text](https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%201.png?raw=true)
 
