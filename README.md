@@ -43,7 +43,7 @@ compile 'axeldjaha.library:dialog:1.0'
                 .show();
 
 # Exemple 2
-https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%202.png?raw=true
+![alt text](https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%201.png?raw=true)
 
         /**
          * On crée la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
@@ -73,7 +73,7 @@ https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%202.png?raw=true
                 .show();
 
 # Exemple 3
-https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%203.png?raw=true
+![alt text](https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%201.png?raw=true)
 
         /**
          * On crée la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
@@ -105,7 +105,7 @@ https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%203.png?raw=true
                 .show();
 
 # Exemple 4
-https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%204.png?raw=true
+![alt text](https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%201.png?raw=true)
 
         /**
          * On crée la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
