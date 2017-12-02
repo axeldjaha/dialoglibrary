@@ -5,6 +5,7 @@ Librairie pour interagir avec l'utilisateur dans une boîte de dialogue.
 # Gradle
 compile 'axeldjaha.library:dialog:1.0'
 # Exemple 1
+![alt text](https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%201.png?raw=true)
 
         /**
          * On crée la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
