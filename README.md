@@ -4,7 +4,7 @@ Les Classes et interfaces de toute librairie 'axeldjaha' commencent toujours par
 Librairie pour interagir avec l'utilisateur dans une boîte de dialogue.
 # Gradle
 compile 'axeldjaha.library:dialog:1.2'
-# Concepte
+# Concept
 ![alt text](https://github.com/axeldjaha/dialoglibrary/blob/master/concepte.png?raw=true)
 # Exemple 1
 ![alt text](https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%201.png?raw=true)
