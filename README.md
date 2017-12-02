@@ -5,6 +5,7 @@ Librairie pour interagir avec l'utilisateur dans une boîte de dialogue.
 # Gradle
 compile 'axeldjaha.library:dialog:1.0'
 # Usage: exemple 1
+![alt text](https://public.boxcloud.com/api/2.0/internal_files/251685856024/versions/265400118232/representations/png_paged_2048x2048/content/1.png?access_token=1!Ch4gedEeG3ZanMyP7gJTY9mhhQfq2Qz2vMZoryYKnEoS3gciEZEEwbBvlY1iyVA4a7n6tJ_MV7Z3I23wE3mu-TQi4P9euIXx3yvM-992a5D-Kh6GFFEo328ToCVeUGk9955a_yrUw6lKwBfYvG0mCJsUYWmj7rQPKrS5_tnWTkD1OlrjGz5eAs15myzgWKftjpTtl_iz3lVtdoG7aGNVaO2dLy_nmoYsUQaezm0gkivNbKXa1CPUyEeFvKEGL3poKeA8Yg4wCNMYO3mDj7oW1xvo6Ow9ff52KsSEhtR-c0T4XkzxIM7c_hvKUfr7HLqABWSzP1D7SzwUOQjQ_ZP0wnmkwNKnz4R1Ph-I2b3jpHtql6COMfh8kEKRaBx8LunIbvYN_rnJk5ELUjOf&box_client_name=box-content-preview&box_client_version=1.20.2)
 
         /**
          * On construit la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
