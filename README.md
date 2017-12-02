@@ -83,12 +83,12 @@ compile 'axeldjaha.library:dialog:1.0'
          */
         ADDialog.newInstance(DialogActivity.this.getSupportFragmentManager())
                 .setHeaderText("Attention")
+                .setHeaderIcon(getResources().getDrawable(R.drawable.warning))
                 .setBodyText("La suppression est irreversible")
                 .setPositiveButtonText("Supprimer")
                 .setNegativeButtonText("Annuler")
                 .setFooterTextColor(getResources().getColor(R.color.bleu))
                 .setFooterBackgroundColor(getResources().getColor(R.color.gray_light))
-                .setHeaderIcon(getResources().getDrawable(R.drawable.warning))
                 .setListener(new ADDialogListenerAdapter(){
                     @Override
                     public void onADPositiveButtonClick(String action) {
