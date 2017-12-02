@@ -148,6 +148,7 @@ compile 'axeldjaha.library:dialog:1.1'
 | show() | Afficher la boîte de dialogue |
 
 # Interface
+Pour écouter les boutons du footer et savoir quel bouton a été cliqué par l'utilisateur, implémenter ADDialogListener. 
 | Méthodes de l'interface ADDialogListener  | Description |
 | --------------------------------- | ----------- |
 | onADNegativeButtonClick(java.lang.String action) | Appelé lorsque l'utilisateur clique sur le bouton négatif |
