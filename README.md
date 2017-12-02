@@ -160,5 +160,5 @@ Pour écouter les boutons du footer et savoir quel bouton a été cliqué par l'
 
 | ADDialogListenerAdapter|
 | --------------------------------- |
-| Pour implémenter seulement les méthodes de l'interface dont on a besoin, créer une instance de ADDialogListenerAdapter ou une classe anonyme de ADDialogListenerAdapter et redéfnir les méthodes désirées |
+| Pour implémenter seulement les méthodes de l'interface dont on a besoin, étendre ADDialogListenerAdapter ou créer une classe anonyme de ADDialogListenerAdapter et redéfnir les méthodes désirées |
 
