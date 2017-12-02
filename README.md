@@ -1,6 +1,6 @@
 # Avant propos
 Les Classes et interfaces de toute librairie 'axeldjaha' commencent toujours par AD (Axel Djaha).
-# dialoglibrary
+# Description
 Librairie pour interagir avec l'utilisateur dans une boîte de dialogue.
 # Gradle
 compile 'axeldjaha.library:dialog:1.1'
