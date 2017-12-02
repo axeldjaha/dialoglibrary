@@ -1,5 +1,5 @@
 # Avant propos
-Les Classes et interfaces de toute librairie 'axeldjaha' commencent toujours par AD, qui signifie Axel Djaha (l'auteur).
+Les Classes et interfaces de toute librairie 'axeldjaha' commencent toujours par AD (Axel Djaha).
 # dialoglibrary
 Librairie pour interagir avec l'utilisateur dans une boîte de dialogue.
 # Gradle
