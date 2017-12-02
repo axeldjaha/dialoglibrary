@@ -81,7 +81,7 @@ compile 'axeldjaha.library:dialog:1.0'
          * on définit éventuellement un écouteur d'évènement pour les différents boutons du footer
          * et on affiche la boîte de dialogue ainsi créée.
          */
-        ADDialog.newInstance(DialogActivity.this.getSupportFragmentManager())
+        ADDialog.newInstance(getSupportFragmentManager())
                 .setHeaderText("Attention")
                 .setHeaderIcon(getResources().getDrawable(R.drawable.warning))
                 .setBodyText("La suppression est irreversible")
@@ -115,7 +115,7 @@ compile 'axeldjaha.library:dialog:1.0'
          * ici on a défini aucun un écouteur d'évènement pour les différents boutons du footer,
          * Vous êtes libre de personnaliser la boîte de dialogue comme bon vous semble !
          */
-        ADDialog.newInstance(DialogActivity.this.getSupportFragmentManager())
+        ADDialog.newInstance(getSupportFragmentManager())
                 .setHeaderText("Succès")
                 .setBodyText("Message envoyé avec succès")
                 .setPositiveButtonText("Ok")
