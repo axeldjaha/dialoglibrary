@@ -147,4 +147,14 @@ compile 'axeldjaha.library:dialog:1.1'
 | setPositiveButtonText(java.lang.String positiveButtonText) | Définir le texte du bouton positif de la bôite de dialogue |
 | show() | Afficher la boîte de dialogue |
 
+# Interface
+| Méthodes de l'interface ADDialogListener  | Description |
+| --------------------------------- | ----------- |
+| onADNegativeButtonClick(java.lang.String action) | Appelé lorsque l'utilisateur clique sur le bouton négatif |
+| onADNeutralButtonClick(java.lang.String action)  | Appelé lorsque l'utilisateur clique sur le bouton neutre |
+| onADPositiveButtonClick(java.lang.String action) | Appelé lorsque l'utilisateur clique sur le bouton positif |
+
+| ADDialogListenerAdapter|
+| --------------------------------- |
+| Pour implémenter seulement les méthodes de l'interface dont on a besoin, créer une instance de ADDialogListenerAdapter ou une classe anonyme de ADDialogListenerAdapter et redéfnir les méthodes désirées |
 
