@@ -4,89 +4,116 @@ Les Classes et interfaces de toute librairie 'axeldjaha' commencent toujours par
 Librairie pour interagir avec l'utilisateur dans une boîte de dialogue.
 # Gradle
 compile 'axeldjaha.library:dialog:1.0'
-# Usage: exemple 1
-![alt text](https://public.boxcloud.com/api/2.0/internal_files/251685856024/versions/265400118232/representations/png_paged_2048x2048/content/1.png?access_token=1!Ch4gedEeG3ZanMyP7gJTY9mhhQfq2Qz2vMZoryYKnEoS3gciEZEEwbBvlY1iyVA4a7n6tJ_MV7Z3I23wE3mu-TQi4P9euIXx3yvM-992a5D-Kh6GFFEo328ToCVeUGk9955a_yrUw6lKwBfYvG0mCJsUYWmj7rQPKrS5_tnWTkD1OlrjGz5eAs15myzgWKftjpTtl_iz3lVtdoG7aGNVaO2dLy_nmoYsUQaezm0gkivNbKXa1CPUyEeFvKEGL3poKeA8Yg4wCNMYO3mDj7oW1xvo6Ow9ff52KsSEhtR-c0T4XkzxIM7c_hvKUfr7HLqABWSzP1D7SzwUOQjQ_ZP0wnmkwNKnz4R1Ph-I2b3jpHtql6COMfh8kEKRaBx8LunIbvYN_rnJk5ELUjOf&box_client_name=box-content-preview&box_client_version=1.20.2)
+# Exemple 1
 
         /**
-         * On construit la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
-         * on définit le titre et/ou le message à afficher,
-         * on définit éventuellement le texte des différents boutons à afficher
-         * on définit éventuellement un écouteur d'évènement pour les différents boutons
+         * On crée la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
+         * on définit et on personnalise les éléments qu'on veut afficher
+         * on définit éventuellement un écouteur d'évènement pour les différents boutons du footer
          * et on affiche la boîte de dialogue ainsi créée.
          */
-        ADDialog.buildDialog(getSupportFragmentManager())
-                .setTitle("Que faire ?")
-                .setMessage("Choisir l'action à exécuter")
-                .setPositiveButtonText("Renommer")
-                .setNegativeButtonText("Supprimer")
-                .setNeutralButtonText("Annuler")
-                .setListener(new ADDialogListenerAdapter(){
-                    @Override
-                    public void onADPositiveActionPerformed(String action) {
-                        super.onADPositiveActionPerformed(action);
-                        //l'utilisateur a cliqué sur Renommer, faire qqch ici
-                    }
-
-                    @Override
-                    public void onADNegativeActionPerformed(String action) {
-                        super.onADNegativeActionPerformed(action);
-                        //l'utilisateur a cliqué sur Supprimer, faire qqch ici
-                    }
-
-                    @Override
-                    public void onADNeutralActionPerformed(String action) {
-                        super.onADNeutralActionPerformed(action);
-                        //l'utilisateur a cliqué sur Annuler, faire qqch ici
-                    }
-                })
-                .show();
-
-# Usage: exemple 2
-
-        /**
-         * On construit la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
-         * on définit le titre et/ou le message à afficher,
-         * on définit éventuellement le texte des différents boutons à afficher
-         * on définit éventuellement un écouteur d'évènement pour les défférents boutons
-         * et on affiche la boîte de dialogue ainsi créée.
-         *
-         * Ici, le titre est utilisé comme le contenu du message à afficher.
-         * Vous êtes libre de construire la boîte de dialogue comme vous le voulez!
-         */
-        ADDialog.buildDialog(getSupportFragmentManager())
-                .setTitle("Supprimer ?")
+        ADDialog.newInstance(getSupportFragmentManager())
+                .setHeaderText("Position")
+                .setHeaderIcon(getResources().getDrawable(R.drawable.position))
+                .setHeaderTextColor(getResources().getColor(R.color.blanc))
+                .setHeaderBackgroundColor(getResources().getColor(R.color.bleu))
+                .setBodyText("Activer la localisation ?")
                 .setPositiveButtonText("Oui")
                 .setNegativeButtonText("Non")
-                .setListener(new ADDialogListenerAdapter(){
+                .setNeutralButtonText("Plus tard")
+                .setFooterTextColor(getResources().getColor(R.color.bleu))
+                .setFooterBackgroundColor(getResources().getColor(R.color.gray_light))
+                .setListener(new ADDialogListener() {
                     @Override
-                    public void onADPositiveActionPerformed(String action) {
-                        super.onADPositiveActionPerformed(action);
-                        //l'utilisateur a cliqué sur Oui, faire qqch ici
+                    public void onADPositiveButtonClick(String action) {
+                        //bouton positif cliqué, faire qqch ici
                     }
 
                     @Override
-                    public void onADNegativeActionPerformed(String action) {
-                        super.onADNegativeActionPerformed(action);
-                        //l'utilisateur a cliqué sur Non, faire qqch ici
+                    public void onADNegativeButtonClick(String action) {
+                        //bouton négatif cliqué, faire qqch ici
+                    }
+
+                    @Override
+                    public void onADNeutralButtonClick(String action) {
+                        //bouton neutre cliqué, faire qqch ici
                     }
                 })
                 .show();
 
-# Usage: exemple 3
+# Exemple 2
 
         /**
-         * On construit la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
-         * on définit le titre et/ou le message à afficher,
-         * on définit éventuellement le texte des différents boutons à afficher
-         * on définit éventuellement un écouteur d'évènement pour les défférents boutons
+         * On crée la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
+         * on définit et on personnalise les éléments qu'on veut afficher
+         * on définit éventuellement un écouteur d'évènement pour les différents boutons du footer
+         * et on affiche la boîte de dialogue ainsi créée.
+         */
+        ADDialog.newInstance(getSupportFragmentManager())
+                .setHeaderText("Initialisation")
+                .setHeaderTextColor(getResources().getColor(R.color.noir))
+                .setBodyText("Les données seront supprimées")
+                .setPositiveButtonText("Initialiser")
+                .setNegativeButtonText("Annuler")
+                .setFooterTextColor(getResources().getColor(R.color.blanc))
+                .setDialogBackgroundColor(getResources().getColor(R.color.bleu))
+                .setListener(new ADDialogListenerAdapter() {
+                    @Override
+                    public void onADPositiveButtonClick(String action) {
+                        //bouton positif cliqué, faire qqch ici
+                    }
+
+                    @Override
+                    public void onADNegativeButtonClick(String action) {
+                        //bouton négatif cliqué, faire qqch ici
+                    }
+                })
+                .show();
+
+# Exemple 3
+
+        /**
+         * On crée la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
+         * on définit et on personnalise les éléments qu'on veut afficher
+         * on définit éventuellement un écouteur d'évènement pour les différents boutons du footer
+         * et on affiche la boîte de dialogue ainsi créée.
+         */
+        ADDialog.newInstance(DialogActivity.this.getSupportFragmentManager())
+                .setHeaderText("Attention")
+                .setBodyText("La suppression est irreversible")
+                .setPositiveButtonText("Supprimer")
+                .setNegativeButtonText("Annuler")
+                .setFooterTextColor(getResources().getColor(R.color.bleu))
+                .setFooterBackgroundColor(getResources().getColor(R.color.gray_light))
+                .setHeaderIcon(getResources().getDrawable(R.drawable.warning))
+                .setListener(new ADDialogListenerAdapter(){
+                    @Override
+                    public void onADPositiveButtonClick(String action) {
+                        super.onADPositiveButtonClick(action);
+                        //bouton positif cliqué, faire qqch ici
+                    }
+
+                    @Override
+                    public void onADNegativeButtonClick(String action) {
+                        super.onADNegativeButtonClick(action);
+                        //bouton positif cliqué, faire qqch ici
+                    }
+                })
+                .show();
+
+# Exemple 4
+
+        /**
+         * On crée la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
+         * on définit et on personnalise les éléments qu'on veut afficher
          * et on affiche la boîte de dialogue ainsi créée.
          *
-         * Ici, on n'a pas défini un écouteur d'évènement
-         * Vous êtes libre de construire la boîte de dialogue selon votre logique!
+         * ici on a défini aucun un écouteur d'évènement pour les différents boutons du footer,
+         * Vous êtes libre de personnaliser la boîte de dialogue comme bon vous semble !
          */
-        ADDialog.buildDialog(getSupportFragmentManager())
-                .setTitle("Succès")
-                .setMessage("Message envoyé avec succès")
+        ADDialog.newInstance(DialogActivity.this.getSupportFragmentManager())
+                .setHeaderText("Succès")
+                .setBodyText("Message envoyé avec succès")
                 .setPositiveButtonText("Ok")
                 .show();
 
