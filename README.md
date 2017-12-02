@@ -130,23 +130,23 @@ compile 'axeldjaha.library:dialog:1.2'
 | newInstance(android.support.v4.app.FragmentManager fragmentManager) | Créer une instance de la boîte de dialogue
 | setAction(java.lang.String action) | Définir l'action à exécuter. Différents éléments peuvent ouvrir la boîte de dialogue. Un élément peut être un Button, un TextView, un EditText ou tout autre widget. En examinant la valeur de action, on pourra savoir quelles instructions doit-on exécuter lors de l'implémentation des méthodes de l'interface ADDialogListener. |
 | setBodyBackgroundColor(int colorId) | Définir la couleur de fond du corps (body) |
-| setBodyPadding(int left, int top, int right, int bottom) | Définir le padding du corps de la boîte de dialogue |
-| setBodyText(java.lang.String bodyText) | Définir le texte à afficher dans le corps de la boîte de dialogue |
-| setBodyTextColor(int colorId) | Définir la couleur de texte du corps de la boîte de dialogue |
+| setBodyPadding(int left, int top, int right, int bottom) | Définir le padding du corps |
+| setBodyText(java.lang.String bodyText) | Définir le texte à afficher dans le corps |
+| setBodyTextColor(int colorId) | Définir la couleur de texte du corps |
 | setDialogBackgroundColor(int colorId) | Définir la couleur de fond de la boîte de dialogue |
 | setDialogCancelable(boolean cancelable) | Définir le comportement de la boîte de dialogue |
-| setFooterBackgroundColor(int colorId) | Définir la couleur de fond du pied de la boîte de dialogue |
-| setFooterPadding(int left, int top, int right, int bottom) | Définir le padding du pied de la boîte de dialogue |
-| setFooterTextColor(int colorId) | Définir la couleur de texte du pied de la boîte de dialogue |
-| setHeaderBackgroundColor(int colorId) | Définir la couleur de fond de l'entête de la boîte de dialogue |
-| setHeaderIcon(android.graphics.drawable.Drawable drawable) | Définir l'icon de l'entête de la boîte de dialogue|
-| setHeaderPadding(int left, int top, int right, int bottom) | Définir le padding de l'entête de la boîte de dialogue |
-| setHeaderText(java.lang.String headerText) | Définir le texte de l'entête de la boîte de dialogue |
-| setHeaderTextColor(int colorId) | Définir la couleur de texte de l'entête de la boîte de dialogue |
-| setListener(ADDialogListener listener) | Définir l'écouteur d'évènement pour les boutons du pied de la boîte de dialogue |
-| setNegativeButtonText(java.lang.String negativeButtonText) | Définir le texte du bouton négatif de la boîte de dialogue |
-| setNeutralButtonText(java.lang.String neutralButtonText) | Définir le texte du bouton neutre de la boîte de dialogue |
-| setPositiveButtonText(java.lang.String positiveButtonText) | Définir le texte du bouton positif de la boîte de dialogue |
+| setFooterBackgroundColor(int colorId) | Définir la couleur de fond du pied (footer) |
+| setFooterPadding(int left, int top, int right, int bottom) | Définir le padding du pied |
+| setFooterTextColor(int colorId) | Définir la couleur de texte du pied |
+| setHeaderBackgroundColor(int colorId) | Définir la couleur de fond de l'entête (header) |
+| setHeaderIcon(android.graphics.drawable.Drawable drawable) | Définir l'icon de l'entête |
+| setHeaderPadding(int left, int top, int right, int bottom) | Définir le padding de l'entête |
+| setHeaderText(java.lang.String headerText) | Définir le texte de l'entête |
+| setHeaderTextColor(int colorId) | Définir la couleur de texte de l'entête |
+| setListener(ADDialogListener listener) | Définir l'écouteur d'évènement pour les boutons du pied |
+| setNegativeButtonText(java.lang.String negativeButtonText) | Définir le texte du bouton négatif |
+| setNeutralButtonText(java.lang.String neutralButtonText) | Définir le texte du bouton neutre |
+| setPositiveButtonText(java.lang.String positiveButtonText) | Définir le texte du bouton positif |
 | show() | Afficher la boîte de dialogue |
 
 # Interface
