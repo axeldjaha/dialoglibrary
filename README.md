@@ -4,6 +4,8 @@ Les Classes et interfaces de toute librairie 'axeldjaha' commencent toujours par
 Librairie pour interagir avec l'utilisateur dans une boîte de dialogue.
 # Gradle
 compile 'axeldjaha.library:dialog:1.1'
+# Concepte
+![alt text](https://github.com/axeldjaha/dialoglibrary/blob/master/concepte.png?raw=true)
 # Exemple 1
 ![alt text](https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%201.png?raw=true)
 
@@ -123,7 +125,7 @@ compile 'axeldjaha.library:dialog:1.1'
 
 # Fonctionnalités
 
-| Méthodes applicables sur DDialog  | Description |
+| Méthodes applicables sur ADDialog  | Description |
 | --------------------------------- | ----------- |
 | newInstance(android.support.v4.app.FragmentManager fragmentManager) | Créer une instance de la boîte de dialogue
 | setAction(java.lang.String action) | Définir l'action à exécuter. Différents éléments peuvent ouvrir la boîte de dialogue. L'action permettra alors de savoir les instructions à exécuter lorsqu'on implémente les méthodes de l'interface ADDialogListener. Un élément peut être un Button, un TextView, un EditText ou tout autre widget |
