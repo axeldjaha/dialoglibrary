@@ -122,15 +122,11 @@ compile 'axeldjaha.library:dialog:1.0'
                 .show();
 
 # Fonctionnalités
-        
+
 | Méthodes applicables sur DDialog  | Description |
 | --------------------------------- | ----------- |
 | newInstance(android.support.v4.app.FragmentManager fragmentManager) | Créer une instance de la boîte de dialogue
-| setAction(java.lang.String action) | Définir l'action à exécuter. correspond à un texte permettant de savoir les instructions à exécuter.
-     *               Dans le cas où différents éléments peuvent ouvrir la boîte de dialogue,
-     *               on pourra savoir les instructions à exécuter en examinant la valeur du
-     *               paramètre 'action' des méthodes de l'interface ADDialogListener.
-     *               Un élément peut être un Button, un TextView, un EditText ou tout autre widget.  |
+| setAction(java.lang.String action) | Définir l'action à exécuter. correspond à un texte permettant de savoir les instructions à exécuter. Dans le cas où différents éléments peuvent ouvrir la boîte de dialogue, on pourra savoir les instructions à exécuter en examinant la valeur du paramètre 'action' des méthodes de l'interface ADDialogListener. Un élément peut être un Button, un TextView, un EditText ou tout autre widget.  |
 | setBodyBackgroundColor(int colorId) | Définir la couleur de fond du corps |
 | setBodyPadding(int left, int top, int right, int bottom) | Définir le padding du corps de la bôite de dialogue |
 | setBodyText(java.lang.String bodyText) | Définir le texte à afficher dans le corps de la boîte de dialogue |
@@ -151,4 +147,4 @@ compile 'axeldjaha.library:dialog:1.0'
 | setPositiveButtonText(java.lang.String positiveButtonText) | Définir le texte du bouton positif de la bôite de dialogue |
 | show() | Afficher la boîte de dialogue |
 
-       
+
