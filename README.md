@@ -10,8 +10,8 @@ compile 'axeldjaha.library:dialog:1.2'
 ![alt text](https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%201.png?raw=true)
 
         /**
-         * On crée la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
-         * on définit et on personnalise les éléments qu'on veut afficher
+         * On crée la boîte de dialogue,
+         * on définit et on personnalise les éléments qu'on veut afficher,
          * on définit éventuellement un écouteur d'évènement pour les différents boutons du footer
          * et on affiche la boîte de dialogue ainsi créée.
          */
@@ -48,8 +48,8 @@ compile 'axeldjaha.library:dialog:1.2'
 ![alt text](https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%202.png?raw=true)
 
         /**
-         * On crée la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
-         * on définit et on personnalise les éléments qu'on veut afficher
+         * On crée la boîte de dialogue,
+         * on définit et on personnalise les éléments qu'on veut afficher,
          * on définit éventuellement un écouteur d'évènement pour les différents boutons du footer
          * et on affiche la boîte de dialogue ainsi créée.
          */
@@ -78,8 +78,8 @@ compile 'axeldjaha.library:dialog:1.2'
 ![alt text](https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%203.png?raw=true)
 
         /**
-         * On crée la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
-         * on définit et on personnalise les éléments qu'on veut afficher
+         * On crée la boîte de dialogue,
+         * on définit et on personnalise les éléments qu'on veut afficher,
          * on définit éventuellement un écouteur d'évènement pour les différents boutons du footer
          * et on affiche la boîte de dialogue ainsi créée.
          */
@@ -110,8 +110,8 @@ compile 'axeldjaha.library:dialog:1.2'
 ![alt text](https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%204.png?raw=true)
 
         /**
-         * On crée la boîte de dialogue avec le fragmentManager d'une AppCompactActivity,
-         * on définit et on personnalise les éléments qu'on veut afficher
+         * On crée la boîte de dialogue,
+         * on définit et on personnalise les éléments qu'on veut afficher,
          * et on affiche la boîte de dialogue ainsi créée.
          *
          * ici on a défini aucun un écouteur d'évènement pour les différents boutons du footer,
