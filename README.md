@@ -128,7 +128,7 @@ compile 'axeldjaha.library:dialog:1.2'
 | Méthodes applicables sur ADDialog  | Description |
 | --------------------------------- | ----------- |
 | newInstance(android.support.v4.app.FragmentManager fragmentManager) | Créer une instance de la boîte de dialogue
-| setAction(java.lang.String action) | Définir l'action à exécuter. Différents éléments peuvent ouvrir la boîte de dialogue. Un élément peut être un Button, un TextView, un EditText ou tout autre widget. En examinant la valeur de action, on pourra savoir quelles instructions doit-on exécuter lors de l'implémentation des méthodes de l'interface ADDialogListener. |
+| setAction(java.lang.String action) | L'action est un court texte unique. Différents éléments peuvent ouvrir la boîte de dialogue. Un élément peut être un Button, un TextView, un EditText ou tout autre widget. En examinant la valeur de action, on pourra savoir quelles instructions exécuter lors de l'implémentation des méthodes de l'interface ADDialogListener. |
 | setBodyBackgroundColor(int colorId) | Définir la couleur de fond du corps (body) |
 | setBodyPadding(int left, int top, int right, int bottom) | Définir le padding du corps |
 | setBodyText(java.lang.String bodyText) | Définir le texte à afficher dans le corps |
