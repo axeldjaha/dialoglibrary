@@ -56,12 +56,15 @@ compile 'axeldjaha.library:dialog:1.2'
         ADDialog.newInstance(getSupportFragmentManager())
                 .setHeaderText("Initialisation")
                 .setHeaderTextColor(getResources().getColor(R.color.noir))
+                .setHeaderBackgroundColor(getResources().getColor(R.color.bleu))
                 .setBodyText("Les données seront supprimées")
+                .setBodyTextColor(getResources().getColor(R.color.noir))
+                .setBodyBackgroundColor(getResources().getColor(R.color.bleu))
                 .setPositiveButtonText("Initialiser")
                 .setNegativeButtonText("Annuler")
                 .setFooterTextColor(getResources().getColor(R.color.blanc))
-                .setDialogBackgroundColor(getResources().getColor(R.color.bleu))
-                .setListener(new ADDialogListenerAdapter() {
+                .setFooterBackgroundColor(getResources().getColor(R.color.bleu))
+                .setListener(new ADDialogListenerAdapter(){
                     @Override
                     public void onADPositiveButtonClick(String action) {
                         //bouton positif cliqué, faire qqch ici
@@ -73,7 +76,6 @@ compile 'axeldjaha.library:dialog:1.2'
                     }
                 })
                 .show();
-
 # Exemple 3
 ![alt text](https://github.com/axeldjaha/dialoglibrary/blob/master/Exemple%203.png?raw=true)
 
@@ -101,7 +103,7 @@ compile 'axeldjaha.library:dialog:1.2'
                     @Override
                     public void onADNegativeButtonClick(String action) {
                         super.onADNegativeButtonClick(action);
-                        //bouton positif cliqué, faire qqch ici
+                        //bouton négatif cliqué, faire qqch ici
                     }
                 })
                 .show();
